@@ -28,36 +28,3 @@ textarea {
     font: 400 1.8rem/1 'Nunito', sans-serif;
     /*rem = sempre pega do maior pai = html, em = pega do pai da onde se encontra.*/
 }
-
-#page-landing {
-    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
-    /*Passando argumentos*/
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-}
-
-
-/*Esse margin :auto; só funciona se o #page-landing for do tipo display :flex; , caso contrário, ele só irá alinhar as laterais. */
-
-#container {
-    margin: auto;
-}
-
-.location,
-h1,
-.visit p {
-    height: 16vh;
-}
-
-.visit a {
-    width: 8rem;
-    height: 8rem;
-    background: #ffd666;
-    border: none;
-    border-radius: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
