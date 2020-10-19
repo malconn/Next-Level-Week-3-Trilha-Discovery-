@@ -11,7 +11,7 @@
 
 #container {
     margin: auto;
-    width: 90%;
+    width: min( 90%, 112rem);
 }
 
 .location,
@@ -55,4 +55,23 @@ main h1 {
 
 .visit a {
     animation-delay: 250ms;
+}
+
+
+/* desktop version */
+
+@media (min-width: 760px) {
+    /*Criando uma regra para minimo de 700 px de largura para cima, será aplicado tudo o que estiver dentro dela.*/
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /*para trazer um espaço entre eles.*/
+    }
+    .location,
+    h1,
+    .visit p {
+        height: initial;
+    }
+    /*Isso faz com que a altura seja volata ao valor inicial antes das alicações de css*/
 }
