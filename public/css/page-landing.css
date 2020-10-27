@@ -72,6 +72,16 @@ main h1 {
     h1,
     .visit p {
         height: initial;
+        text-align: initial;
     }
     /*Isso faz com que a altura seja volata ao valor inicial antes das alicações de css*/
+    .location {
+        text-align: right;
+    }
+    main h1 {
+        font-size: clamp(4rem, 8vw, 8.4rem);
+        /*Fórmula do próprio css para calcular o min, o padrão e máx.*/
+        font-weight: bold;
+        width: min(300px, 80%);
+    }
 }
